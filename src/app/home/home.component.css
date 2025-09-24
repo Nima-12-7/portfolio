@@ -1,0 +1,44 @@
+.home-container {
+  display: flex;
+  gap: 2rem;                /* مسافة بين البوكسات */
+  justify-content: center;  /* توسيط البوكسات أفقياً */
+  flex-wrap: wrap;          /* حتى ما يطلع المحتوى برا الشاشة */
+  padding: 2rem;
+}
+
+.home-box {
+  background-color: lab(96.6% -1.1 -2.03);     /* لون خلفية Baby Blue */
+  border: 1px solid #ccc;        /* إطار خفيف */
+  border-radius: 12px;           /* زوايا ناعمة */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ظل */
+  padding: 1.5rem;               /* مسافة داخلية */
+  width: 300px;                  /* عرض ثابت */
+  text-align: justify;           /* محاذاة النص */
+}
+
+.home-box h1 {
+  margin-bottom: 1rem;           /* مسافة تحت العنوان */
+  text-align: center;            /* العنوان بالوسط */
+}
+
+.skills-list {
+  text-align: left;          /* يخلي القائمة على الشمال */
+  list-style-type: "• ";     /* نقاط */
+  padding-left: 2rem;      /* مسافة عن البوردر */
+  line-height: 1.6;          /* تباعد بين السطور */
+  .skills-list li {
+  margin-bottom: 10px; /* فراغ بين كل عنصر */
+}
+
+  font-size: 1rem;
+}
+.profile-pic {
+  width: 200px;
+  height: 260px;
+  border-radius: 80%;             /* دائري كامل */
+  object-fit: cover ;               /* يملأ الصورة صح */
+  margin: 0 auto 2rem auto;      /* توسيط + مسافة تحت */
+  display: block;                  /* يضمن التوسيط */
+  border: 5px solid #ffffff;          /* إطار أبيض */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل */
+}

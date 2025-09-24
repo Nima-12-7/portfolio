@@ -1,0 +1,17 @@
+.header {
+  height: 30vh;                 /* يغطي 30% من ارتفاع الصفحة */
+  width: 100%;                  /* يغطي كامل عرض الصفحة */
+  background-color: #001f3f;    /* لون كحلي */
+  display: flex;                 /* تفعيل Flexbox */
+  flex-direction: column;        /* ترتيب العناصر عموديًا */
+  align-items: center;           /* توسيط أفقي */
+  justify-content: center;       /* توسيط عمودي */
+  gap: 1rem;                   /* المسافة بين h1 و h3 */
+}
+
+.header h1,
+.header h3 {
+  color: #ffffff; /* أبيض فاتح */
+  text-shadow: 1px 1px 3px rgba(198, 192, 192, 0.4); /* ظل خفيف */
+  margin: 0; /* إزالة الهوامش الافتراضية */
+}

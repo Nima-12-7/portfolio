@@ -1,0 +1,65 @@
+/* الحاوية الرئيسية للسيرة الذاتية */
+.resume-container {
+  width: 90%;          /* عرض الحاوية */
+  max-width: 600px;    /* الحد الأقصى للعرض */
+  margin: 35px auto;   /* يوسّط الحاوية ويضيف مسافة فوق وتحت */
+  padding: 20px;       /* المسافة الداخلية */
+  background-color: oklab(100% 0 -0.00011 / 0.975); /* لون خلفية */
+  border-radius: 20px; /* تدوير الزوايا */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+  border: 1px solid #ccc; 
+}
+
+/* زر التحميل */
+.btn-download {
+  display: block;
+  width: 100%;         /* يجعل الزر بعرض الحاوية */
+  padding: 12px;
+  margin-bottom: 20px; /* مسافة بين الزر والقوائم */
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: #0056b3;
+}
+
+/* أزرار القوائم المنسدلة */
+.accordion-btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  text-align: left;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.accordion-btn:hover {
+  background-color: #d5d5d5;
+}
+
+/* محتوى القوائم المنسدلة */
+.accordion-content {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-left: 3px solid #007bff; /* خط أزرق على اليسار */
+  border-radius: 5px;
+}
+
+/* مثال لتحديد ارتفاع المحتوى إذا أحببت */
+.accordion-content ul {
+  max-height: 150px;   /* أقصى ارتفاع للقائمة */
+  overflow-y: auto;    /* إضافة تمرير إذا تجاوز المحتوى */
+  padding-left: 20px;
+}

@@ -1,0 +1,22 @@
+.navbar-nav {
+  list-style: none;
+  padding-left: 0;
+  background-color: lab(87.54% -1.58 4.41);
+  margin: 0;
+  display: flex;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* يضيف مسافة 50px بين كل رابط */
+}
+
+.custom-link {
+  color: #888e94;       
+  text-decoration: none; 
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.custom-link:hover {
+  color: #070707;       
+}

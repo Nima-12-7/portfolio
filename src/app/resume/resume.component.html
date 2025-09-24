@@ -1,0 +1,96 @@
+<div class="resume-container">
+
+  <!-- زر تحميل السيرة الذاتية -->
+  <button (click)="downloadFile()" class="btn-download">
+    📄 Download PDF Resume
+  </button>
+
+  <!-- Work Experience -->
+  <button (click)="toggle('work')" class="accordion-btn">Work Experience</button>
+  <div *ngIf="showWork" class="accordion-content">
+     <h4>Palestine</h4>
+    <ul>
+      <li> Ministry of Finance – Soc Analyst (Aug 2025 – present) </li>
+      <li>Ministry of Finance - Web Developer ( Aug 2022 - July 2025)</li>
+      <li>PACI organization - Web Developer (Nov 2021 – Aug 2023) </li>
+      </ul>
+      <h4>UAE</h4>
+      <ul>
+      <li>Kima Company _ Web Developer (Sep 2019 _ Sep 2020)  </li>
+       </ul>
+      <h4>Egypt</h4>
+      <ul>
+      <li> UNV _ IT Technician (Jan 2012 _ Jan2017) </li>
+    </ul>
+  </div> 
+
+  <!-- Education -->
+  <button (click)="toggle('education')" class="accordion-btn">Education</button>
+  <div *ngIf="showEducation" class="accordion-content">
+    <ul>
+      <li>Master's in Cybersecurity - American University</li>
+      <li>Bachelor's in Inforation Communicaton Technology - Al quds Open University</li>
+      <li> Scientific High School – Ramallah Secondary Girls School</li>
+    </ul>
+  </div>
+
+  <!-- Programming Skills -->
+  <button (click)="toggle('skills')" class="accordion-btn">Programming Skills</button>
+  <div *ngIf="showSkills" class="accordion-content">
+    <ul>
+      <li>Angular, TypeScript , ASP.NET</li>
+      <li>Django, Python</li>
+      <li>Odoo , Python</li>
+      <li> Source control via Git</li>
+    </ul>
+  </div>
+    <!-- Cybersecurity Skills -->
+<button (click)="toggle('Cybersecurity skills')" class="accordion-btn">
+  Cybersecurity Skills
+</button>
+<div *ngIf="showCyberSkills" class="accordion-content">
+  <ul>
+    <li>SIEM Tools (Splunk)</li>
+    <li>Log Analysis</li>
+    <li>Python, Scripting</li>
+    <li>FTK Imager, Autopsy, Maltego, Wireshark</li>
+    <li>Threat Detection & Monitoring </li>
+  </ul>
+</div>
+
+<!-- Computer Forinsics Skills -->
+  <button (click)="toggle('computer')" class="accordion-btn">Computer Forensics Skills</button>
+  <div *ngIf="showComputerSkills" class="accordion-content">
+    <ul>
+      <li>Disk Imaging & Data Recovery</li>
+      <li>File System Analysis</li>
+      <li>Log & Artifact Analysis</li>
+      <li>Malware Analysis</li>
+      <li>Tools Proficiency – FTK Imager, Autopsy, EnCase, Sleuth Kit</li>
+      <li>Forensic Reporting</li>
+    </ul>
+  </div>
+
+  <!-- Certificates -->
+  <button (click)="toggle('certificates')" class="accordion-btn">Certifications and Trainings  </button>
+  <div *ngIf="showCertificates" class="accordion-content">
+  <ul>
+    <li>CCNA</li>
+    <li>Network</li>
+    <li>Security + </li>
+    <li>Maintenance A+ </li>
+    <li>Soc Tools Training (Splunk) </li>
+    <li>Linux (Ubuntu) and Windows OS  </li>
+  </ul>
+</div>
+<!-- Languages -->
+<button (click)="toggle('languages')" class="accordion-btn">
+  Languages
+</button>
+<div *ngIf="showLanguages" class="accordion-content">
+  <ul>
+    <li>Arabic (Native)</li>
+    <li>English (Good)</li>
+    <li>Espaniol (Good)</li>
+  </ul>
+</div>
