@@ -16,6 +16,7 @@ export class ResumeComponent {
   showCyberSkills = false;
   showComputerSkills = false;
   showCertificates = false;
+  showdata = false;
   showLanguages = false;
 
   constructor(private titleService: Title) {
@@ -27,6 +28,7 @@ export class ResumeComponent {
     if (section === 'education') this.showEducation = !this.showEducation;
     if (section === 'skills') this.showSkills = !this.showSkills;
     if (section === 'Cybersecurity skills') this.showCyberSkills = !this.showCyberSkills;
+    if (section === 'data') this.showdata = !this.showdata;
     if (section === 'computer') this.showComputerSkills = !this.showComputerSkills;
     if (section === 'certificates') this.showCertificates = !this.showCertificates;
     if (section === 'languages') this.showLanguages = !this.showLanguages;

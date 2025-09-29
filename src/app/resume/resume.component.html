@@ -66,11 +66,22 @@
       <li>File System Analysis</li>
       <li>Log & Artifact Analysis</li>
       <li>Malware Analysis</li>
-      <li>Tools Proficiency – FTK Imager, Autopsy, EnCase, Sleuth Kit</li>
+      <li>Tools Proficiency / FTK Imager, Autopsy, EnCase, Sleuth Kit</li>
       <li>Forensic Reporting</li>
     </ul>
   </div>
+  <!--  Data and Visualizatin -->
 
+  <button (click)="toggle('data')" class="accordion-btn">Data & Visualization  </button>
+  <div *ngIf="showdata" class="accordion-content">
+  <ul>
+    <li>Power BI (Dashboards, DAX, Power Query)</li>
+    <li>Excel (Pivot Tables, Advanced Formulas)</li>
+    <li>SQL (Data extraction & joins)</li>
+    <li>Python (Pandas, Matplotlib)</li>
+   
+  </ul>
+</div>
   <!-- Certificates -->
   <button (click)="toggle('certificates')" class="accordion-btn">Certifications and Trainings  </button>
   <div *ngIf="showCertificates" class="accordion-content">
