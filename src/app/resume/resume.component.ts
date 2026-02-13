@@ -42,8 +42,8 @@ export class ResumeComponent {
     if (typeof document !== 'undefined') {
       const link = document.createElement('a');
       link.setAttribute('target', '_blank');
-      link.setAttribute('href', 'assets/Nima_resume.pdf');
-      link.setAttribute('download', 'Nima_resume.pdf');
+      link.setAttribute('href', 'assets/resume.pdf');
+      link.setAttribute('download', 'resume.pdf');
       link.click();
       link.remove();
     }
