@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+
 import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-resume',
@@ -10,13 +11,14 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent {
+   @Input() showSkillsSection: boolean = true;
   showWork = false;
   showEducation = false;
   showSkills = false;
   showCyberSkills = false;
   showComputerSkills = false;
   showCertificates = false;
-  showdata = false;
+  showData = false;
   showLanguages = false;
 
   constructor(private titleService: Title) {
@@ -28,7 +30,7 @@ export class ResumeComponent {
     if (section === 'education') this.showEducation = !this.showEducation;
     if (section === 'skills') this.showSkills = !this.showSkills;
     if (section === 'Cybersecurity skills') this.showCyberSkills = !this.showCyberSkills;
-    if (section === 'data') this.showdata = !this.showdata;
+    if (section === 'Data') this.showData = !this.showData;
     if (section === 'computer') this.showComputerSkills = !this.showComputerSkills;
     if (section === 'certificates') this.showCertificates = !this.showCertificates;
     if (section === 'languages') this.showLanguages = !this.showLanguages;
